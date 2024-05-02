@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paygeon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<script>
+    tailwind.config = {
+        theme: {
+            screens: {
+                'xs': '300px',
+                'sm': '640px',
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+                '2xl': '1536px',
+                '3xl': "1920px",
+            },
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        }
+    }
+</script>
+
+<body class="overflow-x-hidden ">
+
+
+    <nav
+        class="w-full xs:px-10 lg:px-28 2xl:px-[200px]   py-5 bg-[#152841] text-white flex justify-between items-center w-screen xs:hidden md:flex">
+
+        <img src="/assets//images//logo.png" />
+        <div class="flex  itemx-center  gap-5">
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold text-xl">
+                Trust Center</p>
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold text-xl">
+                Pricing</p>
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold text-xl">
+                Product</p>
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold text-xl">
+                VSL Vido</p>
+        </div>
+    </nav>
+
+
+    <nav
+        class="w-full px-0 sm:px-10 lg:px-28 2xl:px-[200px] py-5 bg-[#152841] text-white flex flex-col  items-center w-full xs:flex md:hidden">
+
+        <img src="/assets//images//logo.png" />
+        <div class="flex flex-col  itemx-center  gap-5 text-center">
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold">
+                Trust Center</p>
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold">
+                Pricing</p>
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold">
+                Product</p>
+            <p
+                class="hover:bg-gradient-to-r hover:from-[#0D1E34] hover:via-[#87B1E3] to-[#0A1729] px-3 py-1 rounded-full hover:font-semibold">
+                VSL Vido</p>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+
+    <section
+        class="w-full flex  flex-wrap-reverse  xs:flex-col lg:flex-row lg:flex-nowrap    items-center px-3 sm:px-10 lg:px-28 2xl:px-[200px] gap-10 py-10 bg-gradient-to-r from-[#59C0C3]/30 via-white to-[#59C0C3]/30 ">
+
+        <div class="space-y-8 w-full 3xl:pr-52">
+            <h2 class="text-[#357375] text-xl xs:text-3xl sm:text-5xl md:text-7xl font-semibold relative ">
+
+                Capital OS for <span class="relative">Startups <img class="absolute -bottom-2 -left-1"
+                        src="/assets//images//underline.png" /> </span> & Small Businesses
+            </h2>
+
+            <p class="text-[24px] 3xl:pr-20">Effortlessly manage lenders, consolidate loan payments, and access funding
+                offers—all
+                in one platform. No
+                setup or monthly fees required. Capitalize on success.</p>
+            <button
+                class="bg-gradient-to-r from-[#152841] to-[#006666]  py-3 px-8 rounded-full text-white text-xl font-[DM sans] ">GET
+                STARTED</button>
+        </div>
+        <img src="/assets/images/hero.png" class="" />
+
+    </section>
+
+
+    <!-- section 2 -->
+    <section
+        class="px-1  sm:px-10 lg:px-28 2xl:px-[200px] py-20 bg-gradient-to-tr from-[#BCE5E7] via-[#BCE5E7] to-[#006666]/70 w-full">
+
+        <div class="px-1 sm:px-10 lg:px-28 space-y-5">
+
+            <h2 class="text-center text-5xl font-semibold">Embrace strategic <br> borrowing with Paygeon.</h2>
+            <p class="text-[#4A4A4A] text-xl text-center px-12">Access cash directly to your account when needed, with
+                Paygeon’s secure
+                fintech
+                solution powered by Plaid.
+                Unlike banks, we offer up to $250,000 from our business line of credit, without the hassle of high
+                interest
+                rates or extensive documentation. Successful companies understand the strategic value of debt—let us
+                help
+                you thrive.</p>
+        </div>
+
+
+
+        <div class="grid xs:grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-[64px] my-5 ">
+
+            <!-- sm:basis-full md:basis-1/3 lg:basis-1/4 -->
+            <div
+                class="bg-[#006666] hover:bg-gradient-to-l hover:from-[#152841] hover:to-[#006666] rounded-3xl xs:p-10  3xl:px-12 3xl:py-12 text-white lg:text-xl 3xl:text-2xl">
+                Ubers $9.53 billion debt propelled them to positive cash flow—a prime example of strategic borrowing
+                for growth.
+            </div>
+            <div
+                class="bg-[#006666] hover:bg-gradient-to-l hover:from-[#152841] hover:to-[#006666] rounded-3xl xs:p-10 3xl:px-12 3xl:py-12 text-white  lg:text-xl 3xl:text-2xl">
+                Successful companies embrace debt strategically. Use it for essential expenses while awaiting payments.
+            </div>
+            <div
+                class="bg-[#006666] hover:bg-gradient-to-l hover:from-[#152841] hover:to-[#006666] rounded-3xl xs:p-10 text-center 3xl:px-12 3xl:py-12   text-white lg:text-xl  3xl:text-2xl">
+                With Paygeon’s business line of credit, repayment is hassle-free. Automatic repayments and low-interest
+                rates make borrowing easy.
+            </div>
+        </div>
+
+        <!-- Sub -->
+        <div class="my-32 flex xs:flex-col xl:flex-row items-center gap-16 justify-between">
+
+            <div class="space-y-4 lg:pr-32">
+                <h2 class="text-5xl sm:text-6xl font-semibold">Access funds from your credit line</h2>
+                <p class="text-[#4A4A4A] text-[20px]">Instantly pull funds from a growing credit line that scales as
+                    your
+                    revenue increases.</p>
+                <div class="flex items-start gap-4 py-2 ">
+                    <img src="/assets/images/credit.png" alt="">
+                    <div class="space-y-2">
+                        <h4 class="text-2xl font-semibold">Capital</h4>
+                        <p class="text-[#4A4A4A]">Gain access to an unsecured business credit line of up to $250k for
+                            your
+                            invoice payments.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 py-2">
+                    <img src="/assets/images/gurantee.png" alt="">
+                    <div class="space-y-2">
+                        <h4 class="text-2xl font-semibold">No Founder Guarantee</h4>
+                        <p class="text-[#4A4A4A]">Access higher limits based on your bank balance, no hard credit check,
+                            no personal guarantees.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="relative sm:mt-5 md:mt-0 xs:hidden sm:block ">
+                <img class="absolute top-16 left-16" src="/assets/images/Ellipse 1247.png" alt="">
+                <img src="/assets/images/Ellipse 1248.png" alt="">
+                <img class="absolute -top-20 left-28" src="/assets/images/Group1.png" alt="">
+                <img class="absolute -bottom-20 left-32" src="/assets/images/Group2.png" alt="">
+                <img class="absolute top-16  left-1" src="/assets/images/GroupTrad.png" alt="">
+                <img class="absolute top-60  -left-7" src="/assets/images/GroupCard.png" alt="">
+                <img class="absolute bottom-24  left-20" src="/assets/images/GroupMobilePaid.png" alt="">
+                <img class="absolute top-24 mt-1 right-16" src="/assets/images/GroupDollor.png" alt="">
+                <img class="absolute top-60  -right-8" src="/assets/images/GroupSetting.png" alt="">
+                <img class="absolute bottom-10 mb-1 right-8" src="/assets/images/GroupHome.png">
+            </div>
+        </div>
+
+    </section>
+    <!-- Section 2 Ends Her -->
+
+
+    <!-- Section 3 Starts Here -->
+    <section
+        class="w-full overflow-hidden  bg-gradient-to-br from-[#5B8DC2] via-[#F2F7FF] to-[#F2F7FF] px-3 sm:px-10 lg:px-28 2xl:px-[200px] py-20 w-full">
+        <div class="grid grid-cols-1  sm:grid-cols-1 lg:grid-cols-2  gap-10 items-center py-10 w-full">
+            <img class="w-[300px] h-[300px] sm:w-full sm:h-full" src="/assets/images/section3A.png" alt="">
+            <div class="space-y-8">
+                <h1 class="text-7xl font-semibold text-start "
+                    style="font-size: clamp(1.5rem, 1.0602rem + 2.3457vw, 3.875rem);">Take command of
+                    your invoices</h1>
+                <p class="text-[#4A4A4A] text-[20px]">Safeguard your financial assets with the power to instantly cancel
+                    or freeze
+                    cards, backed by
+                    state-of-the-art fraud protection. Your transaction data seamlessly integrates with your accounting
+                    software, ensuring precision and efficiency.</p>
+                <span class="flex items-start gap-4">
+                    <img class="mt-2 w-8 h-8" src="/assets/images/ownership 1.png" alt="">
+                    <span>
+
+                        <h2 class="text-[28px] font-semibold">Full Ownership</h2>
+                        <p class="text-[#4A4A4A] text-[20px]">Temporarily freeze missing cards in your app or web
+                            dashboard</p>
+                    </span>
+
+                </span>
+
+                <span class="flex items-start gap-5">
+                    <img class="mt-2 w-8 h-8" src="/assets/images/proximity lock 1.png" alt="">
+                    <span>
+
+                        <h2 class="text-[28px] font-semibold">Proximity Lock</h2>
+                        <p class="text-[#4A4A4A] text-[20px]">Enable location-based security to reduce fraudulent
+                            transactions</p>
+                    </span>
+
+                </span>
+            </div>
+            <div class="space-y-8">
+                <h1 class="text-7xl font-semibold text-start "
+                    style="font-size: clamp(1.5rem, 1.0602rem + 2.3457vw, 3.875rem);">Take command of
+                    your invoices</h1>
+                <p class="text-[#4A4A4A] text-[20px]">Safeguard your financial assets with the power to instantly cancel
+                    or freeze
+                    cards, backed by
+                    state-of-the-art fraud protection. Your transaction data seamlessly integrates with your accounting
+                    software, ensuring precision and efficiency.</p>
+                <span class="flex items-start gap-4">
+                    <img class="mt-2 w-8 h-8" src="/assets/images/ownership 1.png" alt="">
+                    <span>
+
+                        <h2 class="text-[28px] font-semibold">Full Ownership</h2>
+                        <p class="text-[#4A4A4A] text-[20px]">Temporarily freeze missing cards in your app or web
+                            dashboard</p>
+                    </span>
+
+                </span>
+
+                <span class="flex items-start gap-5">
+                    <img class="mt-2 w-8 h-8" src="/assets/images/proximity lock 1.png" alt="">
+                    <span>
+
+                        <h2 class="text-[28px] font-semibold">Proximity Lock</h2>
+                        <p class="text-[#4A4A4A] text-[20px]">Enable location-based security to reduce fraudulent
+                            transactions</p>
+                    </span>
+
+                </span>
+            </div>
+            <img class="w-[300px] h-[300px] sm:w-full sm:h-full" src="/assets/images/section3B.png" alt="">
+        </div>
+        <!--  -->
+
+
+
+
+    </section>
+    <!-- Section 3 ends here -->
+
+
+    <!-- section 4 starts here  -->
+
+    <section class=" text-center space-y-5 bg-[#F2F7FF] px-1 sm:px-12 lg:px-44 2xl:px-[400px] py-10">
+        <h2 class="text-6xl font-semibold font-[Nexa-Trial]">Changing the status quo</h2>
+        <p class="text-[#4A4A4A] text-[20px] lg:px-52  ">Revolutionize Invoice Payments with Our AI-Driven Solution,
+            Simplifying Lender Management for Efficient, Error-Free Processes Using a Smart Corporate Credit Card. Say
+            Goodbye to Manual Workflows!</p>
+
+
+        <div class="grid  xs:grid-cols-1 lg:grid-cols-2 items-center p-1 sm:p-6 gap-2 ">
+            <span class="group block hover:bg-[#58BEC2] rounded-2xl px-7 py-16 0 text-start space-y-3">
+
+
+                <img src="/assets/images/cc2 1.png" alt=""
+                    class="px-4  py-5 rounded-full overflow-visible shadow-2xl shadow-slate-600 group-hover:block hidden ">
+                <img src="/assets/images/vccc2.png" alt=""
+                    class="px-4  py-5 rounded-full overflow-visible shadow-2xl shadow-[#58BEC2] group-hover:hidden">
+
+                <h2 class="text-3xl font-semibold group-hover:text-[#FFFFFF]">Unlimited VCCs</h2>
+                <p class="group-hover:text-[#F2F2F2] text-xl">Empower your business with unlimited virtual credit cards.
+                    Customize MCC
+                    restrictions and set spend
+                    limits for unparalleled control and financial efficiency. Streamline employee transactions
+                    effortlessly.</p>
+
+
+            </span>
+
+            <span
+                class="px-7 py-16 group block hover:bg-gradient-to-r hover:from-[#9318DE] hover:via-[#9318DE] hover:to-[#3633DE] hover:text-white  rounded-2xl p-5 text-start space-y-3">
+
+
+                <img src="/assets/images/UX 1.png" alt=""
+                    class="px-4 py-5 rounded-full overflow-visible shadow-xl   shadow-[#9318DE]   group-hover:hidden">
+                <img src="/assets/images/LayerUx.png" alt=""
+                    class="hidden group-hover:block px-4  py-5 rounded-full  overflow-visible shadow-2xl">
+                <h2 class="text-3xl font-semibold grou-hover:text-[#FFFFFF]">Sleek User Experience</h2>
+                <p class="text-[#4A4A4A] group-hover:text-white text-xl">Empower your business with unlimited virtual
+                    credit cards.
+                    Customize MCC
+                    restrictions and set spend
+                    limits for unparalleled control and financial efficiency. Streamline employee transactions
+                    effortlessly.</p>
+
+
+            </span>
+
+
+            <span
+                class="block  rounded-2xl px-7 py-16 text-start space-y-3 group hover:bg-gradient-to-r hover:from-[#FFAF6D] hover:to-[#FF7569]">
+
+
+                <img src="/assets/images/Group 1000001874.png" alt="" class="group-hover:hidden ">
+                <img src="/assets/images/security.png" alt=""
+                    class="hidden group-hover:block px-4  py-3 rounded-full  overflow-visible ">
+
+                <h2 class="text-3xl font-semibold group-hover:text-[#FFFFFF]">Cutting-Edge Security</h2>
+                <p class="text-[#4A4A4A] text-xl group-hover:text-[#FFFFFF]">Experience cutting-edge security with our
+                    platform, exceeding industry
+                    standards. We're PCI and SOC2 compliant, undergo biannual Pentesting, and employ 256-AES bank-grade
+                    encryption..</p>
+
+
+            </span>
+
+
+            <span
+                class="block  rounded-2xl px-7 py-16 text-start space-y-3 group hover:bg-gradient-to-r hover:from-[#565AFD] hover:to-[#56A3FD]">
+
+
+                <img src="/assets/images/Layer 3.png" alt=""
+                    class="px-4 py-5 rounded-full overflow-visible shadow-2xl shadow-[#9318DE]  group-hover:hidden ">
+                <img src="/assets/images/nofee.png" alt=""
+                    class="hidden group-hover:block px-3  py-2 rounded-full  overflow-visible ">
+
+                <h2 class="text-3xl font-semibold group-hover:text-[#FFFFFF]">No Hidden Fees</h2>
+                <p class="text-[#4A4A4A] text-xl group-hover:text-[#FFFFFF]">Transparency is our commitment. Say goodbye
+                    to hidden fees with our
+                    service. We prioritize clarity, ensuring your business enjoys straightforward transactions without
+                    unexpected costs.</p>
+
+
+            </span>
+
+
+        </div>
+        <button
+            class="bg-[#006666] shadow-md shadow-[#006666]/70 px-8 py-2 text-[#FFFFFF] rounded-3xl w-fit mx-auto text-2xl">Apply
+            Now</button>
+    </section>
+
+    <!-- section 4 ends here -->
+
+
+    <!-- Section 5 starts here -->
+    <section class="bg-[#1D4570] xs:px-10 lg:px-28 2xl:px-[200px] py-32 space-y-8 relative w-full">
+        <h2 class="text-center text-white text-6xl" style="font-size: clamp(1.5rem, 1.0602rem + 2.3457vw, 3.875rem);">
+            Minimum Requirements</h2>
+        <p class="text-center text-[#E8E8E8] lg:px-56 text-xl">Businesses of all sizes can create a complimentary
+            account and
+            utilize our
+            services.
+            However, to unlock access to the credit line, we do have specific minimum requirements that must be met
+            initially.</p>
+
+        <div class="flex flex-wrap   justify-center gap-4 items-center ">
+            <span class="bg-black px-6 py-4 text-center text-[#F2F2F2] rounded-full text-2xl">
+                No Personal Guarantee
+            </span>
+
+            <span class="bg-black px-6 py-4 text-center text-[#F2F2F2] rounded-full text-2xl">
+                No Hard Credit Check
+            </span>
+
+
+            <span class="bg-black px-6 py-4 text-center text-[#F2F2F2] rounded-full text-2xl">
+                No Security Deposit
+            </span>
+
+
+
+        </div>
+
+
+        <div
+            class=" bg-[#163153] mt-10 py-6 px-10 rounded-2xl flex flex-wrap xl:flex-nowrap  items-center sm:justify-center lg:justify-between text-center w-full md:w-3/4 mx-auto ">
+            <span
+                class="space-y-2 text-[#FFFFFF]  block flex flex-col items-center justify-center lg:border-[#4E4E4E] xs:border-none lg:border-dashed lg:border-r-2 px-10">
+                <h1 class="xs:text-4xl 2xl:text-6xl font-semibold">
+
+                    640+
+                </h1>
+
+                <p class="text-[#71AAE7] 2xl:text-2xl">Credit Score</p>
+            </span>
+
+
+            <span
+                class="space-y-2 text-[#FFFFFF]  block flex flex-col items-center justify-center xs:border-none lg:border-[#4E4E4E] lg:border-dashed lg:border-r-2 px-10">
+                <h1 class="xs:text-4xl 2xl:text-6xl font-semibold">
+
+                    2+
+                </h1>
+
+                <p class="text-[#71AAE7] 2xl:text-2xl">Years in Business</p>
+            </span>
+
+
+            <span
+                class="space-y-2 text-[#FFFFFF]  block flex flex-col items-center justify-around xs:border-none lg:border-[#4E4E4E] lg:border-dashed lg:border-r-2 px-10">
+                <h1 class="xs:text-4xl 2xl:text-6xl font-semibold">
+
+                    10K
+                </h1>
+
+                <p class="text-[#71AAE7] 2xl:text-2xl">Monthly Bank Balanace</p>
+            </span>
+
+            <span class="text-[#FFFFFF]  block flex flex-col items-center justify-center px-10 space-y-2">
+                <h1 class="text-4xl font-semibold">
+
+                    300K
+                </h1>
+
+                <p class="text-[#71AAE7] 2xl:text-2xl">MRR</p>
+            </span>
+        </div>
+
+
+        <div class="absolute top-0 left-0 flex justify-between px-20 py-5 block w-full ">
+            <div class="space-y-16 ">
+
+                <img class="w-32 h-32" src="/assets/images/flying-money 1.png" alt="">
+                <img class="w-32 h-32" src="/assets/images/save-money 1.png" alt="">
+            </div>
+            <div class="space-y-16">
+                <img class="w-32 h-32" src="/assets/images/big-bag-of-coins 1.png" alt="">
+
+                <img class="w-32 h-32" src="/assets/images/increase 1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Section 5 ends here -->
+
+
+    <!-- section 6 starts here -->
+
+
+    <section
+        class="bg-gradient-to-br from-[#59C0C399]/40 via-white to-[#61A8F3]/40 py-32 xs:px-10 lg:px-28 -z-20 w-full">
+        <h3 class="text-5xl font-semibold lg:px-60 2xl:px-[500px] text-center font-[Nexa-Trial]">Here`s a quick overview
+            of
+            Paygeon`s Line of Credit</h3>
+
+        <div class="flex xs:flex-wrap xl:flex-nowrap   justify-center gap-10 my-10 ">
+            <span class="relative  block  ">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl  h-[305px]"
+                    src="/assets/images/Rectangle 4412.png" alt="">
+
+                <!-- <span class="bg-[#58BDC0] z-10 block  absolute  -left-8 -top-7 rounded-2xl  h-[305px]"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/Layer 15.png" alt="">
+                    <h3 class="text-[#58BEC1] text-lg font-semibold font-[inter]">Fast Funding</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Access $10,000 to $250,000 within hours of
+                        applying.</p>
+                </div>
+            </span>
+
+
+
+            <span class="relative  block w-[200px] ">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4417.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white  w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/Layer 22.png" alt="">
+                    <h3 class="text-[#58BEC1] text-lg font-semibold font-[inter]">Flexible Draw</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Draw any amount you need, when you need it.</p>
+                </div>
+            </span>
+            <span class="relative  block w-[200px]">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4413.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/Layer 16.png" alt="">
+                    <h3 class="text-[#FC7421] text-lg font-semibold font-[inter]">Weekly Payments</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Easily manage repayments with weekly minimum dues.
+                    </p>
+                </div>
+            </span>
+            <span class="relative  block w-[200px] ">
+
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4419.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/rapyment 2 1.png" alt="">
+                    <h3 class="text-[#7B4ED9] text-lg font-semibold font-[inter]">Repayment Terms</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Choose repayment terms from 2.5 to 13 months..</p>
+                </div>
+            </span>
+            <span class="relative  block w-[200px]">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4415.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white  w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/No penalties 1.png" alt="">
+                    <h3 class="text-[#426DC3] text-lg font-semibold font-[inter]">No Prepayment Penalties</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Pay off your balance faster without extra fees..
+                    </p>
+                </div>
+            </span>
+            <span class="relative  block w-[200px]">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4412.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white  w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/automatic payments 1.png" alt="">
+                    <h3 class="text-[#58BEC1] text-lg font-semibold font-[inter]">Automatic Payments</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Payments are automatically deducted weekly..</p>
+                </div>
+            </span>
+
+
+
+        </div>
+
+
+        <div class="flex xs:flex-wrap xl:flex-nowrap  justify-center gap-10 my-10 ">
+            <span class="relative  block  ">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4412.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/Fee 1.png" alt="">
+                    <h3 class="text-[#58BEC1] text-lg font-semibold font-[inter]">Annual Fee</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">A 4% annual fee, payable over 6 months.</p>
+                </div>
+            </span>
+
+
+
+            <span class="relative  block w-[200px] ">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4417.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white  w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/Low Rate 1.png" alt="">
+                    <h3 class="text-[#58BEC1] text-lg font-semibold font-[inter]">Varaible APR</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Enjoy rates from 5% to 25%, based on market
+                        conditions.</p>
+                </div>
+            </span>
+            <span class="relative  block w-[200px]">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4413.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/fee percentage 1.png" alt="">
+                    <h3 class="text-[#FC7421] text-lg font-semibold font-[inter]">Draw Fee</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">A 3% fee applies each time you access your credit
+                        line.</p>
+                </div>
+            </span>
+            <span class="relative  block w-[200px] ">
+
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4419.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/limited time 1.png" alt="">
+                    <h3 class="text-[#7B4ED9] text-lg font-semibold font-[inter]">Negative Days Limit</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans]">Maintain your credit with a max of 12 negative days
+                        annually..</p>
+                </div>
+            </span>
+            <span class="relative  block w-[200px]">
+                <img class="z-10 block  absolute  -left-8 -top-7 rounded-2xl" src="/assets/images/Rectangle 4415.png"
+                    alt="">
+
+                <!-- <span class="bg-[#58BDC0] block w-32 h-72  -z-10 relative rounded-2xl"></span> -->
+                <!-- <img class="z-10 relative   rounded-2xl" src="/assets/images/Rectangle 1.png" alt=""> -->
+                <div
+                    class="shadow-2xl relative z-20 bg-white  w-[200px]   h-[246px] p-7 rounded-3xl flex flex-col justify-center items-center text-center gap-4 ">
+
+                    <img class="w-10 h-10" src="/assets/images/customer support 1.png" alt="">
+                    <h3 class="text-[#426DC3] text-lg font-semibold font-[inter]">Responsive Support</h3>
+                    <p class="text-[#5A5A5A] text-sm font-[DM Sans] font-normal">Our customer service team is always
+                        ready to assist..</p>
+                </div>
+            </span>
+
+        </div>
+
+        <!-- Sub Sections ends here -->
+
+
+        <div class="flex flex-wrap lg:flex-nowrap  justify-center items-center my-10 py-20">
+            <div class="flex flex-col justify-start items-start">
+                <h1 class="text-5xl font-medium py-4 ">Explore the benefits of the <br class="xs:hidden lg:block">
+                    Paygeon Corporate “Black” card</h1>
+                <ul class="flex flex-col">
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> AI Vendor Negotiation:</b>
+                            Resolve disputes effortlessly with our AI negotiator.
+
+                        </span>
+                    </li>
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Free Virtual Cards:</b>
+                            Streamline transactions with unlimited virtual cards.
+
+                        </span>
+                    </li>
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Seamless Integration:</b>
+                            Sync seamlessly with QuickBooks and other apps.
+
+                        </span>
+                    </li>
+
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Real-Time Tracking:</b> Set spending limits and receive alerts.
+
+                        </span>
+                    </li>
+
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> No Foreign Fees:</b>
+                            Save on international purchases.
+
+                        </span>
+                    </li>
+
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Higher Credit Limit:</b>
+                            Unlock up to $1 million credit limit.
+
+                        </span>
+                    </li>
+
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Fraud Protection:</b>
+                            Advanced security features protect against fraud.
+
+
+                        </span>
+                    </li>
+
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Convenient Payments:</b>
+                            Easily pay invoices online or via checks.
+
+
+
+                        </span>
+                    </li>
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Mobile Access:</b>
+                            Manage your account on-the-go.
+
+
+
+
+                        </span>
+                    </li>
+
+
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> 24/7 Support:</b>
+                            Get assistance anytime.
+                        </span>
+                    </li>
+
+
+                    <li class="flex items-center  gap-3 text-xl">
+                        <img class="w-10 h-10 mt-2" src="/assets/images/tickIcon.png" alt="">
+
+                        <span class="text-[#4A4A4A]">
+                            <b> Earn Rewards:</b>
+                            Enjoy additional perks and rewards.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="relative ">
+                <img height="500" width="1000" class=" absolute top-7 left-0 z-10  "
+                    src="/assets/images/Free_Credit_Card_Mockup_5 copy 2 2.png" alt="">
+                <img class="absolute top-20 left-0 " src="/assets/images/Free_Credit_Card_Mockup_5 copy 2 2.png" alt="">
+                <img class="mt-32" src="/assets/images/Free_Credit_Card_Mockup_5 copy 2 2.png" alt="">
+
+            </div>
+        </div>
+
+        <!-- Corousel -->
+        <div class="md:px-28">
+            <h2 class="text-5xl font-semibold text-start">What Our Client Say</h2>
+            <div class=" my-10 flex flex-wrap xs:flex-wrap lg:flex-nowrap  gap-10 overflow-hidden  ">
+                <div class="border border-2 p-10  border-[#DEE9FF] hover:border-[#95D6D6] hover:bg-[#F8FBFF] bg-white rounded-2xl space-y-4 ">
+                    <h3 class="text-2xl font-semibold font-[Gilroy-Bold]">The Best Construction</h3>
+                    <p class="text-[#696969] font-[Gilroy-Regular] text-lg">Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo
+                        consequat aute irure sint amet occaecat cupidatat non proident</p>
+                    <div class="flex justify-start items-center">
+                        <img src="/assets/images/Sophie Moore - Circle Small.png" alt="">
+                        <span>
+                            <h4 class="font-semibold">Sophia Moore</h4>
+                            <p class="text-[#696969] ">CEO at Webflow Agency</p>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="border border-2 border-[#DEE9FF] hover:border-[#95D6D6] hover:bg-[#F8FBFF] p-10 bg-white rounded-2xl space-y-4">
+                    <h3 class="text-2xl font-semibold font-[Gilroy-Bold]">The Best Construction</h3>
+                    <p class="text-[#696969] font-[Gilroy-Regular] text-lg">Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo
+                        consequat aute irure sint amet occaecat cupidatat non proident</p>
+                    <div class="flex justify-start items-center">
+                        <img src="/assets/images/Sophie Moore - Circle Small.png" alt="">
+                        <span>
+                            <h4 class="font-semibold">Sophia Moore</h4>
+                            <p class="text-[#696969] ">CEO at Webflow Agency</p>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="border border-2 border-[#DEE9FF] hover:border-[#95D6D6] hover:bg-[#F8FBFF] p-10 bg-white rounded-2xl space-y-4">
+                    <h3 class="text-2xl font-semibold font-[Gilroy-Bold]">The Best Construction</h3>
+                    <p class="text-[#696969] font-[Gilroy-Regular] text-lg">Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo
+                        consequat aute irure sint amet occaecat cupidatat non proident</p>
+                    <div class="flex justify-start items-center">
+                        <img src="/assets/images/Sophie Moore - Circle Small.png" alt="">
+                        <span>
+                            <h4 class="font-semibold">Sophia Moore</h4>
+                            <p class="text-[#696969] ">CEO at Webflow Agency</p>
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <!-- <span class="block  w-1/2 mx-auto border border-[#484848] h-2 rounded-full bg-gradient-to-r from-[#484848] via-white to-white"></span> -->
+            <span class="block w-1/2 mx-auto border border-[#484848] h-2 rounded-full"
+                style="background-image: linear-gradient(to right, #484848 50%, transparent 50%);"></span>
+
+        </div>
+    </section>
+
+    <!-- section 6 ends here -->
+
+    <!-- section 7 starts here -->
+    <section class="bg-[#20201E] xs:px-10 lg:px-28 2xl:px-[200px] py-32 text-start sm:text-center space-y-6">
+        <h1 class="text-white text-6xl font-bold text-center lg:px-52">Get $175K in partner perks when you sign up.</h1>
+        <p class="text-[#E8E8E8] text-xl">*Rewards may vary depending on time in business, size and status on existing
+            accounts.
+        </p>
+    </section>
+    <!-- section 7 ends here -->
+
+
+    <!-- section 8 starts here -->
+    <section class="bgImage relative  px-1  sm:px-[100px] md:px-[200px]">
+
+        <!-- <img class="absolute top-0 left-0 -z-10 " src="/assets/images/background-image.png" alt=""> -->
+
+        <div class="z-20 xs:w-full px-0  lg:w-1/2 2xl:w-[590px] mx-auto text-center py-20 space-y-5 text-center">
+            <h2 class="text-5xl font-semibold">DESIGNED WITH STARTUP BUDGETS IN MIND</h2>
+            <p class="text-[#787878] font-[400] text-[24px]">Starts pay after funding</p>
+
+            <main class="priceShadow border-2 border-[#B3B3B3] rounded-xl bg-white p-10 ">
+                <p class="text-[#006666] text-[36px] font-[600]">Pro</p>
+                <p class="text-[#898989]  text-[18px] font-[500]">Experiment the power of infinite possibilities</p>
+                <p class="text-[#006666] text-[50px] font-[600] mb-2">$ 0.00</p>
+                <span class="bg-[#DCDCDC] rounded-full px-4 py-2 text-black mx-auto font-[600] ">Per Month</span>
+
+                <div
+                    class="flex xs:flex-wrap lg:flex-nowrap  justify-between w-4/5 mx-auto my-5 rounded-2xl shadow-xl p-5 ">
+                    <div
+                        class="flex xs:flex-wrap lg:flex-nowrap items-center gap-2 xs:border-r-none lg:border-r-4 lg:border-[#E7F3F3] pr-5">
+
+                        <img src="/assets/images/payment.png" alt="">
+                        <div class="flex flex-col justify-start items-start">
+                            <p>Lender Management</p>
+                            <p class="text-[#006666] font-[700]">$1.00/ea/mon</p>
+                        </div>
+                    </div>
+                    <div class="flex xs:flex-wrap lg:flex-nowrap  items-center gap-2">
+                        <img src="/assets/images/fund.png" alt="">
+                        <div class="flex flex-col justify-start items-start">
+                            <p>Cost of Funding</p>
+                            <p class="text-[#006666] font-[700]">22.00%</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="block flex justify-between px-2 my-1">
+                    <p class="text-[#898989] font-[500]">Description</p>
+                    <p class="text-[#898989] font-[500]">Loan payment fee</p>
+                </span>
+                <span
+                    class="block bg-[#F4F4F4] flex justify-between items-center font-semibold px-5 rounded-full accordion py-1 my-1">
+                    <p class="text-lg text-black "> ACH - <span class="text-base text-[#878787]">Bank Transfer </span>
+                    </p>
+                    <p class="text-lg text-black">$2.75</p>
+                </span>
+                <span
+                    class="block  flex justify-between items-center font-semibold px-5 rounded-full accordion py-1 my-1">
+                    <p class="text-lg text-black "> Check - <span class="text-base ">We'll send out a paper check to
+                            your lender </span>
+                    </p>
+                    <p class="text-lg text-black">1.00% + $2.75</p>
+                </span>
+                <span
+                    class="block bg-[#F4F4F4] flex justify-between items-center font-semibold px-5 rounded-full accordion py-1 my-1">
+                    <p class="text-lg text-black "> VCC - <span class="text-base ">Virtual Credit Card </span>
+                    </p>
+                    <p class="text-lg text-black"> $2.75</p>
+                </span>
+
+                <span
+                    class="block  flex justify-between items-center font-semibold px-5 rounded-full accordion py-1 my-1">
+                    <p class="text-lg text-black "> Payment founded by LOC
+                    </p>
+                    <p class="text-lg text-black">3.0%</p>
+                </span>
+                <span class="text-[#898989] text-base  block text-end font-semibold">*Effective 07/23/2024</span>
+                <button class="bg-[#006666] px-5 py-2 rounded-full text-white font-semibold shadow-xl">Apply
+                    Now</button>
+            </main>
+            <img src="/assets/images/image 51.png" alt="">
+        </div>
+    </section>
+    <!-- section 8 ends here -->
+
+    <!-- section 9 starts here -->
+    <section
+        class="xs:px-10 lg:px-28 xl:px-[200px] py-10 space-y-5 bg-gradient-to-tr from-[#59C0C3B2]/40 via-white to-[#5B8DC2]/30 overflow-hidden ">
+        <h2 class="text-5xl text-black text-center xl:px-[200px] 3xl:px-[500px] font-bold my-5">Easy Integration With
+            Popular Plarforms
+        </h2>
+        <p class="text-[#A6A6A6] text-center my-5 xl:px-[200px] 3xl:px-[410px] text-2xl font-[400]">Spend less time on
+            your payments process by eliminating
+            payment workflows and focusing on your business.</p>
+
+        <div class="flex flex-col sm:flex-row xs:flex-wrap lg:flex-nowrap  justify-between   gap-5 ">
+            <span
+                class="  border border-[#D3D3D3] block p-8 flex flex-col justify-center items-center rounded-3xl bg-white">
+                <img src="/assets/images/Slack 1.png" alt="">
+                <p class="text-lg text-black font-medium">Slack</p>
+            </span>
+
+
+            <span
+                class=" basis-1/6 border border-[#D3D3D3] block p-8 flex flex-col justify-center items-center rounded-3xl bg-white">
+                <img src="/assets/images/zapier-icon-svgrepo-com 1.png" alt="">
+                <p class="text-lg text-black font-medium">Zapier</p>
+            </span>
+
+
+
+            <span
+                class=" basis-1/6 border border-[#D3D3D3] block p-8 flex flex-col justify-center items-center rounded-3xl bg-white">
+                <img src="/assets/images/IFTTT_logo 1.png" alt="">
+                <p class="text-lg text-black font-medium">IFTTT</p>
+            </span>
+
+
+
+            <span
+                class="hubspot basis-1/6 border border-[#D3D3D3] block p-8 flex flex-col justify-center items-center rounded-3xl bg-white">
+                <img src="/assets/images/Vector.png" alt="">
+                <p class="text-lg text-black font-medium">Hubspot</p>
+            </span>
+
+
+
+            <span
+                class=" basis-1/6 border border-[#D3D3D3] block p-8 flex flex-col justify-center items-center rounded-3xl bg-white">
+                <img src="/assets/images/quickbooks-1 1.png" alt="">
+                <p class="text-lg text-black font-medium">Quickbooks</p>
+            </span>
+
+
+
+            <span
+                class=" basis-1/6 border border-[#D3D3D3] block p-8 flex flex-col justify-center items-center rounded-3xl bg-white">
+                <img src="/assets/images/Xero_software_logo 1.png" alt="">
+                <p class="text-lg text-black font-medium">Xero</p>
+            </span>
+
+        </div>
+
+
+        <div class="xl:px-[200px] text-start md:text-center py-20 space-y-10">
+            <h3 class="text-5xl font-semibold text-[#006666]"> <span class="text-[#182912]"> Frequently </span> Ask
+                Question</h3>
+            <p class="text-[#5A5A5A]  text-xl lg:mx-20">Welcome to Paygeon! Here are some frequently asked questions to
+                help you navigate our platform:</p>
+        </div>
+
+
+
+        <div class="flex xs:flex-col lg:flex-row  justify-between items-center gap-5">
+            <div class="w-full sm:w-1/2">
+
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-center border-b-2 border-[#CDCDCD] py-2">
+                        <span class="flex gap-4  items-center">
+                            <img src="/assets/images/arrow_drop_down.png" alt="">
+                            <p class="text-[#121A29] font-semibold text-xl">How Can I Play</p>
+                        </span>
+                        <img src="/assets/images/add.png" alt="">
+                    </li>
+
+
+
+
+                    <li class="flex justify-between items-start border-b-2 border-[#CDCDCD] py-2">
+                        <span class="flex gap-4  items-start">
+                            <img src="/assets/images/arrow_drop_down.png" alt="">
+                            <span>
+
+                                <p class="text-[#016767] text-xl font-semibold">How to setup an account</p>
+                                <p class="text-[#5A5A5A] text-sm">Has Flexibility & Expertise to Meet Your Needs. A
+                                    mortgage
+                                    broker navigates the
+                                    client through any situation, handling the process and smoothing any bumps in the
+                                    road along the way. For example, if borrowers have credit issues, the broker will
+                                    know which lenders offer the best products to meet their needs.</p>
+                            </span>
+                        </span>
+                        <img src="/assets/images/remove.png" alt="">
+                    </li>
+
+                    <li class="flex justify-between items-center border-b-2 border-[#CDCDCD] py-2">
+                        <span class="flex gap-4  items-center">
+                            <img src="/assets/images/arrow_drop_down.png" alt="">
+                            <p class="text-[#121A29] font-semibold text-xl">What is the process to get a refund ?</p>
+                        </span>
+                        <img src="/assets/images/add.png" alt="">
+                    </li>
+
+                    <li class="flex justify-between items-center border-b-2 border-[#CDCDCD] py-2">
+                        <span class="flex gap-4  items-center">
+                            <img src="/assets/images/arrow_drop_down.png" alt="">
+                            <p class="text-[#121A29] font-semibold text-lg">How to dispute a payment?</p>
+                        </span>
+                        <img src="/assets/images/add.png" alt="">
+                    </li>
+
+                    <li class="flex justify-between items-center border-b-2 border-[#CDCDCD] py-2">
+                        <span class="flex gap-4  items-center">
+                            <img src="/assets/images/arrow_drop_down.png" alt="">
+                            <p class="text-[#121A29] font-semibold text-lg">How can I play?</p>
+                        </span>
+                        <img src="/assets/images/add.png" alt="">
+                    </li>
+
+
+
+                    <li class="flex justify-between items-center border-b-2 border-[#CDCDCD] py-2">
+                        <span class="flex gap-4  items-center">
+                            <img src="/assets/images/arrow_drop_down.png" alt="">
+                            <p class="text-[#121A29] font-semibold text-xl">How to dispute a payment?</p>
+                        </span>
+                        <img src="/assets/images/add.png" alt="">
+                    </li>
+
+                    <li class="flex justify-between items-center border-b-2 border-[#CDCDCD] py-2">
+                        <span class="flex gap-4  items-center">
+                            <img src="/assets/images/arrow_drop_down.png" alt="">
+                            <p class="text-[#121A29] font-semibold text-xl">How to dispute a payment?</p>
+                        </span>
+                        <img src="/assets/images/add.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="basis-1/2">
+
+                <img src="/assets/images/image 43.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section 9 ends here -->
+
+
+    <!-- footer  -->
+
+    <footer class="w-full">
+
+        <main class="px-2 sm:px-10 lg:px-28 2xl:px-[200px] py-10 bg-[#20201E] w-full overflow-hidden ">
+            <div class="flex justify-between flex-wrap flex-col md:flex-row  gap-5 ">
+
+                <div class="space-y-5 basis-2/6 pr-0 md:pr-[100px] lg:pr-[200px]">
+                    <img src="/assets/images/logo.png" alt="">
+                    <p class="text-[#FFFFFF] text-xl">Empower Your Business, Elevate Your Journey.</p>
+                    <p class="text-[#A6A6A6] text-lg">Everything you need to accept to payment and grow your money of
+                        manage anywhere on planet</p>
+                </div>
+                <ul class="space-y-2">
+                    <li class="text-[#FFFFFF] text-lg font-semibold">Support</li>
+                    <li class="text-[#A6A6A6] text-lg">Help Center</li>
+                    <li class="text-[#A6A6A6] text-lg">Account Information</li>
+                    <li class="text-[#A6A6A6] text-lg">About</li>
+                    <li class="text-[#A6A6A6] text-lg">Contact us</li>
+                </ul>
+                <ul class="space-y-2">
+                    <li class="text-[#FFFFFF] text-lg font-semibold">Help and Solution</li>
+                    <li class="text-[#A6A6A6] text-lg">Talk to support</li>
+                    <li class="text-[#A6A6A6] text-lg">Support docs</li>
+                    <li class="text-[#A6A6A6] text-lg">System Status</li>
+                    <li class="text-[#A6A6A6] text-lg">Covid respond</li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <li class="text-[#FFFFFF] text-lg font-semibold">Product</li>
+                    <li class="text-[#A6A6A6] text-lg">Update</li>
+                    <li class="text-[#A6A6A6] text-lg">Security</li>
+                    <li class="text-[#A6A6A6] text-lg">Beta Test</li>
+                    <li class="text-[#A6A6A6] text-lg">Pricing Product</li>
+                </ul>
+            </div>
+
+            <div class="overflow-hidden  flex flex-col md:flex-row flex-wrap lg:flex-nowrap   py-10 gap-10">
+                <span class="flex justify-start   items-center bg-[#59C0C3] gap-3 pl-2 pr-4 py-1 rounded-full block ">
+                    <img src="/assets/images/phone.png" alt="">
+                    <p class="text-[#FFFFFF] text-2xl font-semibold">+1 (818) 687 2222</p>
+                </span>
+
+
+                <span
+                    class="overflow-hidden  flex justify-start  items-center bg-[#59C0C3] gap-3 pl-2 pr-4 py-1 rounded-full block ">
+                    <img src="/assets/images/email.png" alt="">
+                    <p class="text-[#FFFFFF] text-2xl ">support@paygeon.io</p>
+                </span>
+
+                <span class="flex justify-start  items-center bg-[#59C0C3] gap-3 pl-2 pr-4 py-1 rounded-full block ">
+                    <img src="/assets/images/location.png" alt="">
+                    <p class="text-[#FFFFFF] text-2xl ">1111B S Governors Ave, 6469, Dover, DE 19904</p>
+                </span>
+            </div>
+        </main>
+
+        <div class="bg-[#006666] flex justify-between items-center px-28 py-5">
+            <p class="text-[#FFFFFF]">© 2024 Paygeon Inc. Copyright reserved</p>
+            <p class="text-[#FFFFFF]">
+                Terms and Condtions <span class="font-bold text-gray-500 text-xl">.</span> Privacy Policy
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

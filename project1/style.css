@@ -1,0 +1,19 @@
+.bgImage {
+  background-image: url("/assets/images/background-image.png");
+  background-size: cover;
+}
+
+/* .hubspot {
+  box-shadow: none;
+  border: 1px solid #d3d3d3;
+}
+
+:hover .hubspot {
+  box-shadow: 0px 5px 20px 5px #59c0c3;
+  border: 1px solid #59c0c3;
+} */
+
+.hubspot{
+    box-shadow: 0px 5px 20px 5px #59C0C3;
+    border: 1px solid #59C0C3;  
+}
