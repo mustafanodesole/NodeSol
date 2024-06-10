@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakwheels Listing </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200">
+    <main class="flex gap-2  justify-center   py-20">
+        <section class="basis-1/5 bg-white">
+
+            <p class="bg-blue-400 p-4 text-white text-sm font-semibold">
+
+                Show Results by:
+            </p>
+            <div class=" ">
+
+                <span class="p-4 block  cursor-pointer bg-gray-100 border border-b-2" id="keywordAccordion">
+
+                    <p>Search by Keyword</p>
+
+                </span>
+
+                <span class=" hidden p-4 flex justify-center items-center duration-300" id="keywordBody">
+                    <input id="searchByKeyword" class="border p-1 text-black" type="search"
+                        placeholder="Search by keyword">
+                    <button onclick="searchByKeyword()" class="p-1 bg-blue-800 text-white">Go</button>
+                </span>
+            </div>
+
+            <div>
+
+                <span class="p-4 block accordion cursor-pointer bg-gray-100 border-b-2 " id="cityAccordion">
+
+                    <p>City</p>
+
+                </span>
+                <span class="p-4 block" id="city">
+                    <div>
+
+                        <input id="lhr" type="checkbox" class="city" value="Lahore">
+                        <label for="lhr">Lahore</label>
+                    </div>
+                    <div>
+
+                        <input id="isb" type="checkbox" value="Islamabad" class="city">
+                        <label for="isb">Islamabad</label>
+
+                    </div>
+
+                    <div>
+
+                        <input id="krchi" type="checkbox" value="Karachi" class="city">
+                        <label for="krchi">Karachi</label>
+                    </div>
+
+                    <div>
+
+                        <input id="rwp" type="checkbox" value="Rawalpindi" class="city">
+                        <label for="rwp">Rawalpindi</label>
+                    </div>
+                    <div>
+
+                        <input id="pesh" type="checkbox" value="Peshwar" class="city">
+                        <label for="pesh">Peshwar</label>
+                    </div>
+                </span>
+            </div>
+
+
+            <div>
+
+                <span class="p-4 block accordion cursor-pointer bg-gray-100 border-b-2 " id="provinceAccordion">
+
+                    <p>Province</p>
+
+                </span>
+                <span class="p-4 block" id="provinceBody">
+                    <div>
+
+                        <input id="punjab" type="checkbox" value="punjab">
+                        <label for="punjab">Punjab</label>
+                    </div>
+                    <div>
+
+                        <input id="sindh" type="checkbox" value="sindh">
+                        <label for="sindh">Sindh</label>
+
+                    </div>
+
+                    <div>
+
+                        <input id="kpk" type="checkbox" value="kpk">
+                        <label for="kpk">KPK</label>
+                    </div>
+
+                    <div>
+
+                        <input id="azk" type="checkbox" value="azadkashmir">
+                        <label for="azk">Azadkashmir</label>
+                    </div>
+
+                </span>
+            </div>
+
+
+            <div>
+
+                <span class="p-4 block  cursor-pointer bg-gray-100 border-b-2 " id="makeAccordion">
+
+                    <p>Make</p>
+
+                </span>
+                <span class="p-4 block" id="makeBody">
+                    <div>
+
+                        <input id="honda" type="checkbox" value="Honda">
+                        <label for="honda">Honda</label>
+                    </div>
+                    <div>
+
+                        <input id="suzuki" type="checkbox" value="Suzuki">
+                        <label for="">Suzuki</label>
+
+                    </div>
+
+                    <div>
+
+                        <input id="toyyota" type="checkbox" value="Toyyota">
+                        <label for="toyyota">Toyyota</label>
+                    </div>
+
+                    <div>
+
+                        <input id="nissan" type="checkbox" value="Nissan">
+                        <label for="nissan" for="">Nissan</label>
+                    </div>
+                    <div>
+
+                        <input id="daihatsu" type="checkbox" value="Daihatsu">
+                        <label for="daihatsu">Daihatsu</label>
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="">
+                <span class="p-4 block  cursor-pointer bg-gray-100 border-b-2 " id="priceAccordion">
+
+                    <p>Price Range</p>
+
+                </span>
+                <span class="p-4 block " id="priceBody">
+                    <span class=" p-2 flex justify-center items-center " id="search">
+                        <input id="priceFrom" class="border p-1 w-20" type="number" placeholder="From">
+                        <input class="border p-1 w-20" type="number" name="" id="priceTo" placeholder="To">
+                        <button class="p-1 bg-blue-800 text-white" onclick="calculatePriceRange()">Go</button>
+                    </span>
+                </span>
+            </div>
+
+
+            <div>
+                <span class="p-4 block  cursor-pointer bg-gray-100 border-b-2 " id="yearAccordion">
+
+                    <p>YEAR</p>
+
+                </span>
+                <span class="p-4 block " id="yearBody">
+                    <span class=" p-2 flex justify-center items-center " id="search">
+                        <input id="yearFrom" class="border p-1 w-20" type="number" placeholder="From">
+                        <input class="border p-1 w-20" type="number" name="" id="yearTo" placeholder="To">
+                        <button class="p-1 bg-blue-800 text-white" onclick="calculateYearRange()">Go</button>
+                    </span>
+                </span>
+            </div>
+
+
+            <div>
+                <span class="p-4 block  cursor-pointer bg-gray-100 border-b-2 " id="mileageAccordion">
+
+                    <p>Mileage (KM)</p>
+
+                </span>
+                <span class="p-4 block " id="mileageBody">
+                    <span class=" p-2 flex justify-center items-center " id="search">
+                        <input class="border p-1 w-20" type="number" placeholder="From" id="mileageFrom">
+                        <input class="border p-1 w-20" type="number" name="" id="mileageTo" placeholder="To">
+                        <button class="p-1 bg-blue-800 text-white" onclick="calculateMileageRange()">Go</button>
+                    </span>
+                </span>
+            </div>
+
+
+        </section>
+
+        <section class="basis-2/3 ">
+            <div class="bg-white p-2 flex justify-between items-center ">
+                <span class="space-x-2">
+
+                    <label for="">Sort By</label>
+                    <select name="" id="sortby" class="border border-2 border-gray-200 p-1 rounded-lg">
+                        <option value="recentFirst">Update Date : Recent First</option>
+                        <option value="oldestFirst">Update Date : Oldest First</option>
+                        <option value="priceLowToHigh">Price : Low to High</option>
+                        <option value="priceHighToLow">Price : Hight to Low</option>
+                        <option value="modelLatest">Model Year : Latest First</option>
+                        <option value="modelOldest">Model Year : Oldest First First</option>
+                        <option value="mileageLowToHigh">Milage : Low to High</option>
+                        <option value="mileageHighToLow">Milage : High to Low</option>
+                    </select>
+                </span>
+                <!-- <button onclick="add()" class="bg-red-700 text-white px-5 py-2 rounded-xl hover:bg-red-600">Add</button> -->
+                <div class="relative flex  flex-col items-center justify-center overflow-hidden  bg-gray-50 p-2">
+                    <div>
+                        <label for="tw-modal"
+                            class="cursor-pointer rounded bg-red-900 p-2 text-white active:bg-slate-400">Add</label>
+                    </div>
+                    <!-- HIdden Toggle -->
+                    <input type="checkbox" id="tw-modal" class="peer fixed appearance-none opacity-0 ">
+
+
+                    <!-- modal -->
+                    <label for="tw-modal"
+                        class="pointer-events-none invisible fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-slate-700/30 opacity-0  transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100">
+                        <!-- modal box -->
+                        <label for=""
+                            class="max-h-[calc(100vh - 5em)] h-fit w-fit scale-90 overflow-y-auto overscroll-contain rounded-md bg-white p-6 text-black shadow-2xl transition flex flex-col  items-center gap-4">
+                            <div class="flex flex-col justify-center items-center gap-3 ">
+
+                                <input type="text" id="carTitle" placeholder="Title of the car"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+                                <!-- <input type="text" placeholder="Location" id="location"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full"> -->
+                                <select id="location"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+                                    <option value="select Location" disabled>Location</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Islamabad">Islamabad</option>
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Peshwar">Peshwar</option>
+                                    <option value="Azadkashmir">Azadkashmir</option>
+                                </select>
+                                <input type="text" placeholder="Price in Lacs" id="carPrice"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+
+                                <input type="number" placeholder="Car Model" id="carModel"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+                                <input type="number" placeholder="Km" id="km"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+                                <input type="text" placeholder="Engine" id="carEngine"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+                                <select id="carGear"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+                                    <option value="select gear" disabled>Gear</option>
+                                    <option value="Automatic">Automatic</option>
+                                    <option value="Manual">Manual</option>
+                                </select>
+                                <input type="file" name="" id="carImage" accept="images/*"
+                                    class="rounded-md p-2 outline-gray-400 border  border-gray-300 w-full">
+                                <button onclick="add()"
+                                    class=" submit rounded-lg bg-black text-white py-2 px-5 mx-auto ">Submit</button>
+                            </div>
+
+
+                        </label>
+                    </label>
+                </div>
+            </div>
+
+            <div id="carDetails" class=" my-4 rounded-lg flex  flex-col gap-4">
+                <p></p>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="myscript.js"></script>
+    <!-- <script src="script2.js"></script>
+    <script src="script3.js"></script> -->
+
+
+
+</body>
+
+</html>
